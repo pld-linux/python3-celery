@@ -1,8 +1,0 @@
---- celery-5.0.5/requirements/default.txt~	2020-12-16 16:16:37.000000000 +0100
-+++ celery-5.0.5/requirements/default.txt	2021-03-04 23:15:17.093664795 +0100
-@@ -1,4 +1,4 @@
--pytz>dev
-+pytz
- billiard>=3.6.3.0,<4.0
- kombu>=5.0.0,<6.0
- vine>=5.0.0,<6.0

@@ -12,7 +12,7 @@ Summary:	Celery - Distributed Task Query
 Summary(pl.UTF-8):	Celery - rozproszona kolejka zadań
 Name:		python3-%{module}
 Version:	5.2.7
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Development/Languages/Python
 Source0:	https://files.pythonhosted.org/packages/source/c/celery/%{module}-%{version}.tar.gz

@@ -11,18 +11,18 @@
 Summary:	Celery - Distributed Task Query
 Summary(pl.UTF-8):	Celery - rozproszona kolejka zadań
 Name:		python3-%{module}
-Version:	5.2.7
-Release:	3
+Version:	5.5.2
+Release:	1
 License:	BSD-like
 Group:		Development/Languages/Python
 Source0:	https://files.pythonhosted.org/packages/source/c/celery/%{module}-%{version}.tar.gz
-# Source0-md5:	d684a4f20069c3c4c2f79e17fec42c52
+# Source0-md5:	1b23383f3b1f941ce9c19ab382a8b95f
 URL:		http://celeryproject.org/
 BuildRequires:	python3 >= 1:3.7
 BuildRequires:	python3-setuptools >= 1:40.8.0
 %if %{with tests}
-BuildRequires:	python3-billiard >= 3.6.4.0
-BuildRequires:	python3-billiard < 4
+BuildRequires:	python3-billiard >= 4.1.0
+BuildRequires:	python3-billiard < 5.0
 BuildRequires:	python3-boto3 >= 1.9.178
 BuildRequires:	python3-case >= 1.3.1
 BuildRequires:	python3-click >= 8.0.3
@@ -33,7 +33,7 @@ BuildRequires:	python3-click-repl >= 0.2.0
 %if "%{py3_ver}" == "3.7"
 BuildRequires:	python3-importlib_metadata >= 1.4.0
 %endif
-BuildRequires:	python3-kombu >= 5.2.3
+BuildRequires:	python3-kombu >= 5.3.4
 BuildRequires:	python3-kombu < 6
 BuildRequires:	python3-moto >= 2.2.6
 BuildRequires:	python3-pymongo
@@ -50,7 +50,7 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	sed >= 4.0
 %if %{with doc}
 BuildRequires:	python3-billiard >= 3.6.4.0
-BuildRequires:	python3-kombu >= 5.2.3
+BuildRequires:	python3-kombu >= 5.3.4
 BuildRequires:	python3-pytz >= 2021.3
 BuildRequires:	python3-sphinx_celery >= 2.0.0
 BuildRequires:	python3-sphinx_click >= 2.5.0
